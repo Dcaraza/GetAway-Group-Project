@@ -2,148 +2,196 @@
 <html>
 
 <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
-        integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
-        crossorigin="anonymous"></script>
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <tile>GetAway</tile>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+    integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+    crossorigin="anonymous"></script>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GetAway</title>
 </head>
 
-<body id="Home" class=scrollspy>
-    <div class="navbar-fixed">
-        <nav class="blue">
-            <div class="container">
-                <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">GetAway</a>
-                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-
-                        <li>
-                            <a href="#home">Home</a>
-
-                        </li>
-                        <li>
-                            <a href="#search">Search</a>
-
-                        </li>
-                        <li>
-                            <a href="#popular">Popular</a>
-
-                        </li>
-                        <li>
-                            <a href="#gallery">Gallery</a>
-
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-
-                        </li>
-                    </ul>
-
-
-
-
-                </div>
-            </div>
-        </nav>
-
-
-    </div>
-
-    <ul class="side-nav" id="mobile-nav">
-
-        <li>
-            <a href="#home">Home</a>
-
-        </li>
-        <li>
-            <a href="#search">Search</a>
-
-        </li>
-        <li>
-            <a href="#popular">Popular</a>
-
-        </li>
-        <li>
-            <a href="#gallery">Gallery</a>
-
-        </li>
-        <li>
-            <a href="#contact">Contact</a>
-
-        </li>
-    </ul>
-    <section class="slider">
-        <ul class="slides">
+<body id="home" class="scrollspy">
+  <div class="navbar-fixed">
+    <nav class="teal">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">GetAway</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
             <li>
-                <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
-                <div class="caption center-align">
-                    <h3>This is our big Tagline!</h3>
-                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor, sit amet
-                        consectetur adipisicing elit. Sit impedit adipisci ullam quod pariatur aperiam provident aut
-                        earum molestias nam?</h5>
-                </div>
-            </li>
-            <li>
-                <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
-                <div class="caption left-align">
-                    <h3>Left Aligned Caption</h3>
-                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet
-                        consectetur, adipisicing elit. Facilis officiis accusantium, explicabo eaque ab molestias
-                        architecto eos ratione impedit inventore.</h5>
-                </div>
-            </li>
-            <li>
-                <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
-                <div class="caption right-align">
-                    <h3>Right Aligned Caption</h3>
-                    <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit, amet
-                        consectetur adipisicing elit. Pariatur perspiciatis reiciendis et voluptates ipsam provident
-                        laborum beatae? Et, eveniet quo?</h5>
-                </div>
+              <a href="#home">Home</a>
             </li>
 
-        </ul>
+            <li>
+              <a href="#search">Search</a>
+            </li>
 
-    </section>
-    <!--Section Search-->
-    <section id="search" class="section-search blue white-text center scrollspy"></section>
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <h3>Search Destination</h3>
-                <div class="input-field">
-                    <input type="text" class="white grey-text autocomplete" id="autocomplete-input"
-                        placeholder=" Rio De Janeiro, Toyko, Egypt">
-                </div>
-            </div>
+            <li>
+              <a href="#popular">Popular Places</a>
+            </li>
+
+            <li>
+              <a href="#gallery">Gallery</a>
+            </li>
+
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+
         </div>
+      </div>
+
+    </nav>
+  </div>
+
+  <!--Navbar-->
+  <ul class="sidenav" id="mobile-nav">
+    <li>
+      <a href="#home">Home</a>
+    </li>
+
+    <li>
+      <a href="#search">Search</a>
+    </li>
+
+    <li>
+      <a href="#popular">Popular Places</a>
+    </li>
+
+    <li>
+      <a href="#gallery">Gallery</a>
+    </li>
+
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+  </ul>
+
+  <!--Section Slider-->
+
+  <section class="slider">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="image/egypt-1.jpg"> <!-- random image -->
+          <div class="caption center-align">
+            <h2>Take Your Dream Vacation</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Quasi, nihil.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="image/rio-1.jpg"> <!-- random image -->
+          <div class="caption left-align">
+            <h2>We Work With All Budgets</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Harum, animi?</h5>
+          </div>
+        </li>
+        <li>
+          <img src="image/tokyo-1.jpg"> <!-- random image -->
+          <div class="caption right-align">
+            <h2>Group & Individual GetAways!</h2>
+            <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Id, eligendi!</h5>
+          </div>
+        </li>
+      </ul>
     </div>
+  </section>
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!--Search bar-->
 
-    <script>
-        //Sidenav
-        const sideNav = document.querySelector('.sidenav');
-        M.Sidenav.init(sideNav, {});
+  <section id="search" class="section section-search teal darken-1 white-text center scrollspy"></section>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h3>Search Destinations</h3>
+        <div class="input-field">
+          <input type="text" class="white grey-text autocomplete" id="autocomplete-input"
+            placeholder="New York, Tokyo, Egypt,">
+        </div>
+      </div>
+    </div>
+  </div>
 
-        //slider
-        const slider = document.querySelector('.slider');
-        M.Sidenav.init(sideNav, {
-            indicators: false,
-            height: 500,
-            transition: 500,
-            interval: 6000
-        });
+  <!--Section for Icon Boxes-->
+
+  <section class="section section-icons grey lighten-4 center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large teal-text">room</i>
+            <h4>Pick Where</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, numquam.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large teal-text">store</i>
+            <h4>Travel Shop</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, numquam.</p>
+          </div>
+
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large teal-text">airplanemode_active</i>
+            <h4>Flight Cheap</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, numquam.</p>
+          </div>
+        </div>
+  </section>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+
+  <script>
+    //sideNav
+
+    const sideNav = document.querySelector(".sidenav");
+    M.Sidenav.init(sideNav, {});
 
 
-    </script>
+    //Slider
+    const slider = document.querySelector(".slider");
+    M.Slider.init(slider, {
+      indicators: false,
+      height: 500,
+      transition: 500,
+      intervald: 6000,
+
+    });
+
+    //Autocomplete
+
+    const ac = document.querySelector(".autocomplete");
+    M.Autocomplete.init(ac, {
+      data: {
+        "New York": null,
+        "Paris, France": null,
+        "Egypt": null,
+        "Tokyo": null,
+        "Rio de Janeiro": null,
+        "Italy": null,
+        "Miami, FL": null,
+        "Hawaii": null,
+        "Cuba": null,
+        "Hialeah": null,
+      }
+    })
+
+  </script>
 </body>
 
 </html>
