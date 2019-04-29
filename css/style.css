@@ -5,3 +5,13 @@
     border: #f4f4f4 3px solid !important;
 
 }
+
+.card-tittle{
+    text-align: center;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.section-follow .fa-4x{
+margin: 5px 10px;
+}
