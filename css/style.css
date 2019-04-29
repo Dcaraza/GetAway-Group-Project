@@ -15,3 +15,16 @@
 .section-follow .fa-4x{
 margin: 5px 10px;
 }
+
+.card-tittle{
+    color: teal;
+    margin-top: 25px;
+}
+
+.slider .slides li .caption {
+    color: black;
+}
+
+.section .container .collection-header h4{
+    text-align: center;
+}
