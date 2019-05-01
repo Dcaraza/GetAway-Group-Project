@@ -7,9 +7,8 @@
   <!--Import materialize.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
-    integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
-    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,7 +32,7 @@
             </li>
 
             <li>
-              <a href="#popular">Popular Places</a>
+              <a href="#Map">Map</a>
             </li>
 
             <li>
@@ -62,7 +61,7 @@
     </li>
 
     <li>
-      <a href="#popular">Popular Places</a>
+      <a href="#map">Map</a>
     </li>
 
     <li>
@@ -80,27 +79,22 @@
     <div class="slider">
       <ul class="slides">
         <li>
-          <img src="images/egypt-slider.jpg"> <!-- random image -->
+          <img src="images/snow-slider.jpeg"> <!-- random image -->
           <div class="caption center-align">
-            <h2>Take Your Dream Vacation</h2>
-            <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Quasi, nihil.</h5>
+            <h2>Let’s go on an adventure</h2>
+           
           </div>
         </li>
         <li>
-          <img src="images/rio-slider.jpg"> <!-- random image -->
-          <div class="caption left-align">
-            <h2>We Work With All Budgets</h2>
-            <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Harum, animi?</h5>
+          <img src="images/food-slider.jpg"> <!-- random image -->
+          <div class="caption left-align white-text">
+            <h2>Eat well – Travel often</h2>
           </div>
         </li>
         <li>
-          <img src="images/tokyo-slider.jpg"> <!-- random image -->
+          <img src="images/city-slider.jpg"> <!-- random image -->
           <div class="caption right-align">
-            <h2>Group & Individual GetAways!</h2>
-            <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Id, eligendi!</h5>
+            <h2>The world is yours to explore</h2>
           </div>
         </li>
       </ul>
@@ -115,8 +109,7 @@
       <div class="col s12">
         <h3>Search Destinations</h3>
         <div class="input-field">
-          <input type="text" class="white grey-text autocomplete" id="autocomplete-input"
-            placeholder="New York, Tokyo, Egypt,">
+          <input type="text" class="white grey-text" id="search-map" placeholder="New York, Tokyo, Egypt,">
             <input type="submit" value="submit" class="btn">
         </div>
       </div>
@@ -132,25 +125,37 @@
           <div class="card-panel">
             <i class="material-icons large teal-text">room</i>
             <h4>Pick Where</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, numquam.</p>
+            <p>Discover different places, search in our map where you want to go.</p>
           </div>
         </div>
         <div class="col s12 m4">
           <div class="card-panel">
-            <i class="material-icons large teal-text">store</i>
-            <h4>Travel Shop</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, numquam.</p>
+            <i class="material-icons large teal-text">local_dining</i>
+            <h4>Find Local Food</h4>
+            <p>Immerse yourself in new cultures, try new cuisines.</p>
           </div>
 
         </div>
         <div class="col s12 m4">
           <div class="card-panel">
-            <i class="material-icons large teal-text">airplanemode_active</i>
-            <h4>Flight Cheap</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, numquam.</p>
+            <i class="material-icons large teal-text">cloud_queue</i>
+            <h4>Weather</h4>
+            <p>Don't let the weather stop you, always be prepared!</p>
           </div>
         </div>
   </section>
+
+  <!--Section for Map-->
+<section id="map" class="section section-search teal darken-1 white-text center scrollspy">
+  <h4>Map</h4>
+  <div class="container">
+    <div class="row">
+      <div class="col s10 m6 center">
+        <div class="map"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!--Section for Popular Places-->
 
@@ -160,7 +165,7 @@
         <h4 class="center"><span class="teal-text">Popular Places</span></h4>
         <div class="col s12 m4">
           <div class="card">
-            <div class="card-image">
+            <div class="card-image" id="egypt-page">
               <img src="images/egypt-1.jpg" alt="Pyramids of Egypt">
               <span class="card-tittle">Pyramids of Giza</span>
             </div>
@@ -172,7 +177,7 @@
         </div>
         <div class="col s12 m4">
           <div class="card">
-            <div class="card-image">
+            <div class="card-image" id="tokyo-page">
               <img src="images/tokyo-1.jpg" alt="Pyramids of Egypt">
               <span class="card-tittle">Tokyo, Japan</span>
             </div>
@@ -183,7 +188,7 @@
         </div>
         <div class="col s12 m4">
           <div class="card">
-            <div class="card-image">
+            <div class="card-image" id="rio-page">
               <img src="images/rio-1.jpg" alt="Pyramids of Egypt">
               <span class="card-tittle">Rio de Janeiro, Brazil</span>
             </div>
@@ -203,7 +208,7 @@
       <div class="row">
         <div class="col s12">
           <h4>Follow GetAway</h4>
-          <p>Follow us on social media for special offers</p>
+          <p>Follow us on social media</p>
           <a href="#" class="white-text">
             <i class="fab fa-facebook fa-4x"></i>
           </a>
@@ -232,44 +237,37 @@
         <span class="teal-text">Photo Gallery</span>
       </h4>
       <div class="row">
-        <div class="col s12 m3">
+        <div class="col s12 m4">
           <img src="https://source.unsplash.com/1600x900/?beach" alt="" class="materialboxed responsive-img">
         </div>
-        <div class="col s12 m3">
+        <div class="col s12 m4">
           <img src="https://source.unsplash.com/1600x900/?travel" alt="" class="materialboxed responsive-img">
         </div>
-        <div class="col s12 m3">
+        <div class="col s12 m4">
           <img src="https://source.unsplash.com/1600x900/?nature" alt="" class="materialboxed responsive-img">
         </div>
-        <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?beach, travel" alt="" class="materialboxed responsive-img">
-        </div>
+
       </div>
       <div class="row">
-        <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?water" alt="" class="materialboxed responsive-img">
+        <div class="col s12 m4">
+          <img src="https://source.unsplash.com/1600x900/?meal" alt="" class="materialboxed responsive-img">
         </div>
-        <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?building" alt="" class="materialboxed responsive-img">
+        <div class="col s12 m4">
+          <img src="https://source.unsplash.com/1600x900/?natural,drink" alt="" class="materialboxed responsive-img">
         </div>
-        <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?trees" alt="" class="materialboxed responsive-img">
+        <div class="col s12 m4">
+          <img src="https://source.unsplash.com/1600x900/?food" alt="" class="materialboxed responsive-img">
         </div>
-        <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?cruise" alt="" class="materialboxed responsive-img">
-        </div>
+
       </div>
       <div class="row">
-        <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?beaches" alt="" class="materialboxed responsive-img">
-        </div>
-        <div class="col s12 m3">
+        <div class="col s12 m4">
           <img src="https://source.unsplash.com/1600x900/?traveling" alt="" class="materialboxed responsive-img">
         </div>
-        <div class="col s12 m3">
+        <div class="col s12 m4">
           <img src="https://source.unsplash.com/1600x900/?bridge" alt="" class="materialboxed responsive-img">
         </div>
-        <div class="col s12 m3">
+        <div class="col s12 m4">
           <img src="https://source.unsplash.com/1600x900/?travel, boat" alt="" class="materialboxed responsive-img">
         </div>
       </div>
@@ -329,6 +327,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="Javascript/style.js"></script>
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLVhk8I6g5jNheclnfSS890Xrjo6r9qpk&callback=createMap&libraries=places"
+  async defer></script>
+
+
+
 
 </body>
 
