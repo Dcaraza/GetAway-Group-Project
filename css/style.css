@@ -28,3 +28,15 @@ margin: 5px 10px;
 .section .container .collection-header h4{
     text-align: center;
 }
+
+.light .grey-text .text-lighten-3 .hide-on-small-only h5{
+    color:black;
+}
+
+.caption{
+    font-family: 'EB Garamond', serif;
+}
+
+#map {
+    height: 500px;
+  }
