@@ -39,7 +39,7 @@ function createMap(){
     zoom: 10
   };
 
-  map = new google.map.createMap(document.getElementById("map"), options);
+  map = new google.map.createMap(document.getElementById("map-body"), options);
 }
 
 
@@ -52,8 +52,8 @@ function createMap () {
     center: { lat: 25.7617, lng: -80.1918 }, 
     zoom: 10
   };
-
-  map = new google.maps.Map(document.getElementById('map'), options);
+  debugger
+  map = new google.maps.Map(document.getElementById('map-body'), options);
 
   var input = document.getElementById('search-map');
   var searchBox = new google.maps.places.SearchBox(input);
