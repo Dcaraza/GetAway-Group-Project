@@ -1,3 +1,7 @@
+body{
+    font-family: 'Noto Serif', serif;
+}
+
 .search-section input{
     padding: 5px !important;
     font-size: 18px !important;
@@ -16,10 +20,7 @@
 margin: 5px 10px;
 }
 
-.card-tittle{
-    color: teal;
-    margin-top: 25px;
-}
+
 
 .slider .slides li .caption {
     color: black;
@@ -37,6 +38,25 @@ margin: 5px 10px;
     font-family: 'EB Garamond', serif;
 }
 
-#map {
+.map {
     height: 500px;
+    width: 100%;
   }
+
+.card .card-image img{
+    width: 250px;
+    float: right;
+}
+
+#temp, #humidity, #wind{
+    float: right;
+}
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #3d5afe !important;
+    -webkit-box-shadow: 0 1px 0 0 #3d5afe !important;
+    box-shadow: 0 1px 0 0 #3d5afe !important;
+}
+
+nav .brand-logo, .flow-text, #media{
+    font-family: 'Lobster', cursive;
+}
